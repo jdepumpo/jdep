@@ -1,5 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styles from './header.module.css'
+
+const ListLink = props =>
+  <li style={{ display: `inline-block`, marginRight: `1rem`}}>
+    <Link to={props.to}>
+      {props.children}
+    </Link>
+  </li>
 
 const Header = () => (
   <div
@@ -16,7 +24,13 @@ const Header = () => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+        <ul className={styles.topnav}>
+        <ListLink to="/work/">
+        Work
+        </ListLink>
+        <ListLink to="/about/">Me</ListLink>
+      </ul>
+      <h1>
         <Link
           to="/"
           style={{

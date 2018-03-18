@@ -4,10 +4,9 @@ import styles from './hero.module.css'
 
 const Banner = () => (
 <div className={styles.hero}>
-<span style={{fontFamily: 'Bungee Shade', fontSize: 'calc(65px + 3vw)',}}>
-resume
-</span>
+<span className={styles.herotext}> {location.pathname} </span>
 </div>
 
 )
+
 export default Banner

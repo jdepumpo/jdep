@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/Header'
+import Banner from '../components/Banner';
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
@@ -14,14 +15,15 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
+    <Banner />
     <div
       style={{
         margin: '0 auto',
         maxWidth: 960,
         padding: '1.0875rem 1.45rem',
-        paddingTop: .5,
+        paddingTop: '1rem',
         backgroundColor: 'WhiteSmoke',
-        borderRadius: '10px',
+        borderRadius: '0px 0px 10px 10px',
       }}
     >
       {children()}
