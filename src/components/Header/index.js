@@ -24,12 +24,6 @@ const Header = () => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-        <ul className={styles.topnav}>
-        <ListLink to="/work/">
-        Work
-        </ListLink>
-        <ListLink to="/about/">Me</ListLink>
-      </ul>
       <h1>
         <Link
           to="/"
@@ -38,11 +32,11 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-         <svg width="260" height="80">
+         <svg width="200" height="80">
           <text x="6" y="62"
             style={{
               fontFamily:'Roboto',
-              fontSize: 70,
+              fontSize: '3rem',
               fill: '#7fb800',
             }}
             >
@@ -51,7 +45,7 @@ const Header = () => (
           <text x="14" y="68"
             style={{
               fontFamily:'Roboto',
-              fontSize: 70,
+              fontSize: '3rem',
               fill: '#ffb400',
             }}
             >
@@ -60,7 +54,7 @@ const Header = () => (
           <text x="10" y="65"
             style={{
               fontFamily:'Roboto',
-              fontSize: 70,
+              fontSize: '3rem',
               fill: 'white',
             }}
             >
@@ -68,6 +62,12 @@ const Header = () => (
           </text>
         </svg>
         </Link>
+        <ul className={styles.topnav}>
+        <ListLink to="/work/">
+        Work
+        </ListLink>
+        <ListLink to="/about/">Me</ListLink>
+        </ul>
       </h1>
     </div>
   </div>
